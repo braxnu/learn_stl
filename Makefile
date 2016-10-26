@@ -1,7 +1,9 @@
+program_name = prime_ratio
+
 default: clean
-	g++ test.cpp -o test
-	chmod a+x test
+	g++ $(program_name).cpp -o $(program_name)
+	chmod a+x $(program_name)
 
 clean:
-	rm test
+	rm -f $(program_name)
 
